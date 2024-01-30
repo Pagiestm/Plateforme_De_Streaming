@@ -1,4 +1,4 @@
-# Reqûête SQL
+# Requête SQL
 
 ```sql
 SELECT Titre, Date_de_sortie
