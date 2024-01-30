@@ -1,4 +1,4 @@
-# Ajout des valurs dans les tables
+# Ajout des valeurs dans les tables
 
 ```sql
 INSERT INTO Films (id, Titre, Duree_du_film, Date_de_sortie)
