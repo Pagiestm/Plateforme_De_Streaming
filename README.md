@@ -18,4 +18,4 @@
 
 ## Requête
 
-[Requête SQl](./Documents/requête.md)
+[Requête SQL](./Documents/requête.md)
