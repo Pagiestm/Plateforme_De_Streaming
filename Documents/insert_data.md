@@ -1,7 +1,9 @@
+# Ajout des valurs dans les tables
+
 ```sql
 INSERT INTO Films (id, Titre, Duree_du_film, Date_de_sortie)
 VALUES (1, 'Zombieland', '01:28:00', '2009-11-25'),
-	    (2, 'Pulp Fiction', '02:34:00', '1994-10-26'),
+	(2, 'Pulp Fiction', '02:34:00', '1994-10-26'),
        (3, 'L Empire contre-attaque', '02:04:00', '1980-08-20'),
        (4, 'Oppenheimer', '03:01:00', '2023-07-19'),
        (5, 'Inception', '02:28:00', '2010-07-21');
@@ -9,14 +11,14 @@ VALUES (1, 'Zombieland', '01:28:00', '2009-11-25'),
 
 INSERT INTO realisateurs (id, Nom, Prenom)
 VALUES (1, 'Ruben', 'Fleischer'),
-	    (2, 'Tarantino', 'Quentin'),
+	(2, 'Tarantino', 'Quentin'),
        (3, 'Kershner', 'Irvin'),
        (4, 'Nolan', 'Christopher');
 
 
 INSERT INTO realiser (id, id_Films, id_Réalisateurs)
 VALUES (1, 1, 1),
-	    (2, 2, 2),
+	(2, 2, 2),
        (3, 3, 3),
        (4, 4, 4),
        (5, 5, 4);
@@ -39,7 +41,7 @@ VALUES (1, 'Harrelson', 'Woody', '1961-07-23', 'M', 'Principal'),
 
 INSERT INTO jouer (id, id_Films, id_Acteurs)
 VALUES (1, 1, 1),
-	    (2, 1, 2),
+	(2, 1, 2),
        (3, 1, 3),
        (4, 1, 4),
        (5, 2, 5),
@@ -59,7 +61,7 @@ VALUES (1, 'Pagies', 'Theotime', 'theotime@gmail.com', SHA2('motdepasse123', 256
 
 INSERT INTO favoris (id, id_Films, id_Utilisateurs)
 VALUES (1, 1, 1),
-	    (2, 2, 1),
+	(2, 2, 1),
        (3, 5, 1),
        (4, 3, 2),
        (5, 2, 2);

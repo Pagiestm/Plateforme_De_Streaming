@@ -1,5 +1,9 @@
 # Commandes MySQL pour la création de la base de données et des tables
 
+## Ennoncée
+
+[Plateforme De Streaming](./Documents/Plateforme_De_Streaming.pdf)
+
 ## Création de la base de données
 
 [Création de la base de données](./Documents/create_database.md)
