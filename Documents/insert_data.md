@@ -31,11 +31,11 @@ VALUES (1, 'Harrelson', 'Woody', '1961-07-23', 'M', 'Principal'),
        (4, 'Breslin', 'Abigail', '1996-04-14', 'F', 'Secondaire'),
        (5, 'Travolta', 'John', '1954-02-18', 'M', 'Principal'),
        (6, 'Jackson', 'Samuel L.', '1948-12-21', 'M', 'Principal'),
-       (7, 'Avary', 'Roger', '1965-08-23', 'M', 'Secondaire'),
+       (7, 'Stoltz', 'Eric', '1961-09-30', 'M', 'Secondaire'),
        (8, 'Ford', 'Harrison', '1942-07-13', 'M', 'Principal'),
        (9, 'Hamill', 'Mark', '1951-09-25', 'M', 'Principal'),
-       (10, 'Jeremy', 'Bulloch', '1960-12-26', 'M', 'Secondaire'),
-       (11, 'Murphy', 'Cillian', '1904-04-22', 'M', 'Principal'),
+       (10, 'Jeremy', 'Bulloch', '1945-02-16', 'M', 'Secondaire'),
+       (11, 'Murphy', 'Cillian', '1976-05-25', 'M', 'Principal'),
        (12, 'DiCaprio', 'Leonardo', '1974-11-11', 'M', 'Principal');
 
 
