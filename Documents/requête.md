@@ -49,8 +49,8 @@ VALUES ('Forrest Gump', '02:20:00', '1994-10-05');
 ### requête 6 :
 
 ```sql
-INSERT INTO acteurs (Nom, Prenom, Date_de_naissance, Sexe, Role)
-VALUES ('Hanks', 'Tom', '1956-07-09', 'M', 'Principal');
+INSERT INTO acteurs (Nom, Prenom, Date_de_naissance, Sexe)
+VALUES ('Hanks', 'Tom', '1956-07-09', 'M');
 ```
 
 ### requête 7 : 
