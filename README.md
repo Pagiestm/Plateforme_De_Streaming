@@ -1,8 +1,12 @@
-# Commandes MySQL pour la création de la base de données et des tables
+# Exercice Plateforme de Streaming
 
 ## Ennoncée
 
 [Plateforme De Streaming](./Documents/Plateforme_De_Streaming.pdf)
+
+## MCD (Modèle Conceptuel de Données)
+
+![MCD](./Documents/MCD.png)
 
 ## Création de la base de données
 

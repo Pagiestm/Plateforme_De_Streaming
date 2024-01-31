@@ -34,19 +34,19 @@ CREATE TABLE IF NOT EXISTS utilisateurs(
 
 CREATE TABLE IF NOT EXISTS jouer(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES Films(id),
-   id_Acteurs INT REFERENCES Acteurs(id)
+   id_Films INT REFERENCES films(id),
+   id_Acteurs INT REFERENCES acteurs(id)
 );
 
 CREATE TABLE IF NOT EXISTS realiser(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES Films(id),
-   id_Réalisateurs INT REFERENCES Réalisateurs(id)
+   id_Films INT REFERENCES films(id),
+   id_Réalisateurs INT REFERENCES realisateurs(id)
 );
 
 CREATE TABLE IF NOT EXISTS favoris(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES Films(id),
-   id_Utilisateurs INT REFERENCES Utilisateurs(id)
+   id_Films INT REFERENCES films(id),
+   id_Utilisateurs INT REFERENCES utilisateurs(id)
 );
 ```
