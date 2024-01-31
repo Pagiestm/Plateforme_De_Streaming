@@ -4,6 +4,10 @@
 
 [Plateforme De Streaming](./Documents/Plateforme_De_Streaming.pdf)
 
+## Le Dictionnaire de données 
+
+![Dictionnaire de données](./Documents/Dico.png)
+
 ## MCD (Modèle Conceptuel de Données)
 
 ![MCD](./Documents/MCD.png)

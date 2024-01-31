@@ -13,8 +13,7 @@ CREATE TABLE IF NOT EXISTS acteurs(
    Nom VARCHAR(25) NOT NULL,
    Prenom VARCHAR(25) NOT NULL,
    Date_de_naissance DATE NOT NULL,
-   Sexe VARCHAR(5) NOT NULL,
-   Role VARCHAR(25) NOT NULL
+   Sexe VARCHAR(5) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS realisateurs(
@@ -35,13 +34,14 @@ CREATE TABLE IF NOT EXISTS utilisateurs(
 CREATE TABLE IF NOT EXISTS jouer(
    id INT PRIMARY KEY AUTO_INCREMENT,
    id_Films INT REFERENCES films(id),
-   id_Acteurs INT REFERENCES acteurs(id)
+   id_Acteurs INT REFERENCES acteurs(id),
+   Role VARCHAR(25) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS realiser(
    id INT PRIMARY KEY AUTO_INCREMENT,
    id_Films INT REFERENCES films(id),
-   id_Réalisateurs INT REFERENCES realisateurs(id)
+   id_Realisateurs INT REFERENCES realisateurs(id)
 );
 
 CREATE TABLE IF NOT EXISTS favoris(

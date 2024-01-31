@@ -1,4 +1,4 @@
-# Requête SQL
+# Requêtes SQL
 
 
 ### requête 1 :
@@ -22,11 +22,11 @@ ORDER BY Nom, Prenom;
 ### requête 3 :
 
 ```sql
-SELECT Nom, Prenom
+SELECT acteurs.Nom, acteurs.Prenom, Role
 FROM jouer
-INNER JOIN acteurs ON Jouer.id_Acteurs = acteurs.id
+INNER JOIN acteurs ON jouer.id_Acteurs = acteurs.id
 WHERE jouer.id_Films = 1
-      AND acteurs.Role = 'Principal';
+      AND jouer.Role = 'Principal';
 ```
 
 ### requête 4 :
