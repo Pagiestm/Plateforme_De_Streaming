@@ -14,6 +14,7 @@ ORDER BY Date_de_sortie DESC;
 ```sql
 SELECT Nom, Prenom, TIMESTAMPDIFF(YEAR, Date_De_naissance, NOW()) AS Age
 FROM acteurs
+GROUP BY Nom, Prenom, Date_De_naissance
 HAVING Age > 30
 ORDER BY Nom, Prenom;
 ```
@@ -23,7 +24,7 @@ ORDER BY Nom, Prenom;
 ```sql
 SELECT Nom, Prenom
 FROM jouer
-INNER JOIN Acteurs ON Jouer.id_Acteurs = Acteurs.id
+INNER JOIN acteurs ON Jouer.id_Acteurs = acteurs.id
 WHERE jouer.id_Films = 1
       AND acteurs.Role = 'Principal';
 ```
@@ -32,16 +33,16 @@ WHERE jouer.id_Films = 1
 
 ```sql
 SELECT Nom AS Nom_Acteur, Prenom AS Prenom_Acteur, Titre
-FROM Jouer
-INNER JOIN acteurs ON Jouer.id_Acteurs = acteurs.id
-INNER JOIN films ON Jouer.id_Films = films.id
+FROM jouer
+INNER JOIN acteurs ON jouer.id_Acteurs = acteurs.id
+INNER JOIN films ON jouer.id_Films = films.id
 WHERE acteurs.id = 4;
 ```
 
 ### requête 5 :
 
 ```sql
-INSERT INTO Films (Titre, Duree_du_film, Date_de_sortie)
+INSERT INTO films (Titre, Duree_du_film, Date_de_sortie)
 VALUES ('Forrest Gump', '02:20:00', '1994-10-05');
 ```
 
@@ -55,5 +56,59 @@ VALUES ('Hanks', 'Tom', '1956-07-09', 'M', 'Principal');
 ### requête 7 : 
 
 ```sql
+UPDATE films
+SET 
+    Titre = "test"
+WHERE id = 6;
+```
 
+### Requête 8 :
+
+```sql
+DELETE FROM acteurs WHERE id = 13;
+```
+
+### Requête 9 :
+
+```sql
+SELECT *
+FROM acteurs
+ORDER BY id DESC
+LIMIT 3;
+```
+
+### Requête 10 :
+
+```sql
+SELECT *
+FROM films
+ORDER BY Date_de_sortie ASC
+LIMIT 1;
+```
+
+### Requête 11 :
+
+```sql
+SELECT *
+FROM acteurs
+ORDER BY Date_de_naissance DESC
+LIMIT 1;
+```
+
+### Requête 12 :
+
+```sql
+SELECT COUNT(Date_de_sortie) AS Nombre_de_films, Titre
+FROM films
+WHERE YEAR(Date_de_sortie) = 1990
+ORDER BY Titre DESC;
+```
+
+### Requête 13 :
+
+```sql
+SELECT Titre, SUM(id_Acteurs IS NOT NULL) AS Somme_des_acteurs
+FROM films 
+LEFT JOIN Jouer ON films.id = jouer.id_Films
+GROUP BY Titre;
 ```
