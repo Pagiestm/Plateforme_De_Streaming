@@ -1,4 +1,4 @@
-# Ajout des valurs dans les tables
+# Ajout des valeurs dans les tables
 
 ```sql
 INSERT INTO films (Titre, Duree_du_film, Date_de_sortie)
@@ -59,6 +59,7 @@ VALUES ('Pagies', 'Theotime', 'theotime@gmail.com', SHA2('motdepasse123', 256), 
        ('Pinkman', 'Jesse', 'jesse@gmail.com', SHA2('motdepasse456', 256), 'USER');
 
 
+<<<<<<< HEAD
 INSERT INTO favoris (id_Films, id_Utilisateurs)
 VALUES (1, 1),
 	(2, 1),
@@ -66,3 +67,12 @@ VALUES (1, 1),
        (3, 2),
        (2, 2);
 ```
+=======
+INSERT INTO favoris (id, id_Films, id_Utilisateurs)
+VALUES (1, 1, 1),
+	(2, 2, 1),
+       (3, 5, 1),
+       (4, 3, 2),
+       (5, 2, 2);
+```
+>>>>>>> daaba2555ea6a17d541254b308d35d1993d99296

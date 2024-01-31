@@ -1,4 +1,4 @@
-# Reqûête SQL
+# Requête SQL
 
 
 ### requête 1 :
@@ -33,6 +33,7 @@ WHERE jouer.id_Films = 1
 ```sql
 SELECT Nom AS Nom_Acteur, Prenom AS Prenom_Acteur, Titre
 FROM Jouer
+<<<<<<< HEAD
 INNER JOIN acteurs ON Jouer.id_Acteurs = acteurs.id
 INNER JOIN films ON Jouer.id_Films = films.id
 WHERE acteurs.id = 4;
@@ -57,3 +58,9 @@ VALUES ('Hanks', 'Tom', '1956-07-09', 'M', 'Principal');
 ```sql
 
 ```
+=======
+INNER JOIN Acteurs ON Jouer.id_Acteurs = Acteurs.id
+INNER JOIN Films ON Jouer.id_Films = Films.id
+WHERE Acteurs.id = 4;
+```
+>>>>>>> daaba2555ea6a17d541254b308d35d1993d99296
