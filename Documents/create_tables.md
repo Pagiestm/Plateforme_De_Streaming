@@ -1,50 +1,50 @@
 # Création des tables
 
 ```sql
-CREATE TABLE Films(
-   id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS films(
+   id INT PRIMARY KEY AUTO_INCREMENT,
    Titre VARCHAR(50) NOT NULL,
    Duree_du_film TIME NOT NULL,
    Date_de_sortie DATE NOT NULL
 );
 
-CREATE TABLE Acteurs(
-   id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS acteurs(
+   id INT PRIMARY KEY AUTO_INCREMENT,
    Nom VARCHAR(25) NOT NULL,
    Prenom VARCHAR(25) NOT NULL,
    Date_de_naissance DATE NOT NULL,
    Sexe VARCHAR(5) NOT NULL,
-   id_Role INT REFERENCES Roles(id)
+   Role VARCHAR(25) NOT NULL
 );
 
-CREATE TABLE Realisateurs(
-   id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS realisateurs(
+   id INT PRIMARY KEY AUTO_INCREMENT,
    Nom VARCHAR(25) NOT NULL,
    Prenom VARCHAR(25) NOT NULL
 );
 
-CREATE TABLE Utilisateurs(
-   id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS utilisateurs(
+   id INT PRIMARY KEY AUTO_INCREMENT,
    Nom VARCHAR(25) NOT NULL,
    Prenom VARCHAR(25) NOT NULL,
    Email VARCHAR(50) NOT NULL,
    Mot_de_passe VARCHAR(255) NOT NULL,
-   Rôle VARCHAR(10) NOT NULL
+   Role VARCHAR(10) NOT NULL
 );
 
-CREATE TABLE Jouer(
+CREATE TABLE IF NOT EXISTS jouer(
    id INT PRIMARY KEY AUTO_INCREMENT,
    id_Films INT REFERENCES Films(id),
    id_Acteurs INT REFERENCES Acteurs(id)
 );
 
-CREATE TABLE Realiser(
+CREATE TABLE IF NOT EXISTS realiser(
    id INT PRIMARY KEY AUTO_INCREMENT,
    id_Films INT REFERENCES Films(id),
    id_Réalisateurs INT REFERENCES Réalisateurs(id)
 );
 
-CREATE TABLE Favoris(
+CREATE TABLE IF NOT EXISTS favoris(
    id INT PRIMARY KEY AUTO_INCREMENT,
    id_Films INT REFERENCES Films(id),
    id_Utilisateurs INT REFERENCES Utilisateurs(id)
