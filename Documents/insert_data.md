@@ -56,15 +56,16 @@ VALUES
 
 
 
-INSERT INTO utilisateurs (Nom, Prenom, Email, Mot_de_passe, Role)
-VALUES ('Pagies', 'Theotime', 'theotime@gmail.com', SHA2('motdepasse123', 256), 'ADMIN'),
-       ('Pinkman', 'Jesse', 'jesse@gmail.com', SHA2('motdepasse456', 256), 'USER');
+INSERT INTO utilisateurs (Nom, Prenom, Email, Mot_de_passe)
+VALUES ('Pagies', 'Theotime', 'theotime@gmail.com', SHA2('motdepasse123', 256)),
+       ('Pinkman', 'Jesse', 'jesse@gmail.com', SHA2('motdepasse456', 256));
 
 
-INSERT INTO favoris (id_Films, id_Utilisateurs)
-VALUES (1, 1),
-	(2, 1),
-       (5, 1),
-       (3, 2),
-       (2, 2);
+INSERT INTO favoris (id_Films, id_Utilisateurs, Role)
+VALUES (1, 1, 'Columbus'),
+	(2, 1, 'Vincent Vega'),
+       (5, 1, 'Cobb'),
+       (3, 2, 'Han solo'),
+       (3, 2, 'Dark Vador'),
+       (2, 2, 'Vincent Vega');
 ```

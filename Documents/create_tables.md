@@ -27,26 +27,26 @@ CREATE TABLE IF NOT EXISTS utilisateurs(
    Nom VARCHAR(25) NOT NULL,
    Prenom VARCHAR(25) NOT NULL,
    Email VARCHAR(50) NOT NULL,
-   Mot_de_passe VARCHAR(255) NOT NULL,
-   Role VARCHAR(10) NOT NULL
+   Mot_de_passe VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS jouer(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES films(id),
-   id_Acteurs INT REFERENCES acteurs(id),
+   id_Films INT NOT NULL REFERENCES films(id),
+   id_Acteurs INT NOT NULL REFERENCES acteurs(id),
    Role VARCHAR(25) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS realiser(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES films(id),
-   id_Realisateurs INT REFERENCES realisateurs(id)
+   id_Films INT NOT NULL REFERENCES films(id),
+   id_Realisateurs INT NOT NULL REFERENCES realisateurs(id)
 );
 
 CREATE TABLE IF NOT EXISTS favoris(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   id_Films INT REFERENCES films(id),
-   id_Utilisateurs INT REFERENCES utilisateurs(id)
+   id_Films INT  NOT NULL REFERENCES films(id),
+   id_Utilisateurs INT NOT NULL REFERENCES utilisateurs(id),
+   Role VARCHAR(50) NOT NULL
 );
 ```
