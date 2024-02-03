@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2024-02-03T13:16:04.790Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="UYoCtqPjkVO-bREY7PQc" version="23.1.1" type="device">
+  <diagram name="Page-1" id="0X1AOnNaQFmDnxDhCsNZ">
+    <mxGraphModel dx="2074" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-1" value="utilisateurs" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; INT&lt;br&gt;Nom&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;VACHAR(25)&lt;br&gt;Prenom&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VARCHAR(25)&lt;br&gt;Email&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VARCHAR(50)&lt;br&gt;Mot_de_passe&amp;nbsp; &amp;nbsp;VARCHAR(255)&lt;br&gt;&lt;/font&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-1">
+          <mxGeometry y="50" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-3" value="favoris" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="195" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id_Films&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; INT&lt;/font&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;&lt;br&gt;id_Utilisateurs&lt;/u&gt;&amp;nbsp; &amp;nbsp;INT&lt;br&gt;Role&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VACHAR(50)&lt;br&gt;&lt;/span&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-3">
+          <mxGeometry y="50" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-6" value="films" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="185" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-7" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;INT&lt;br&gt;Titre&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VACHAR(50)&lt;br&gt;Duree_du_film&amp;nbsp; &amp;nbsp; &amp;nbsp; TIME&lt;br&gt;Date_de_sortie&amp;nbsp; &amp;nbsp; &amp;nbsp;DATE&lt;br&gt;&lt;/span&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-6">
+          <mxGeometry y="50" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-9" value="Realiser" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="400" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id_Films&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;INT&lt;br&gt;&lt;u&gt;id_Realisateurs&lt;/u&gt;&amp;nbsp; &amp;nbsp; INT&lt;/font&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-9">
+          <mxGeometry y="50" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-12" value="realisateurs" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="755" y="584.5" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; INT&lt;br&gt;Nom&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;VARCHAR(25)&lt;br&gt;Prenom&amp;nbsp; &amp;nbsp; &amp;nbsp; VARCHAR(25)&lt;/font&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-12">
+          <mxGeometry y="50" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-15" value="jouer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="195" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-16" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id_Films&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;INT&lt;br&gt;&lt;u&gt;id_Acteurs&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;INT&lt;br&gt;Role&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;VARCHAR(25)&lt;br&gt;&lt;/span&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-15">
+          <mxGeometry y="50" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-24" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-15">
+          <mxGeometry y="120" width="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-18" value="acteurs" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="177.5" width="270" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-19" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;u&gt;id&lt;/u&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;INT&lt;br&gt;Nom&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VARCHAR(25)&lt;br&gt;Prenom&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;VARCHAR(25)&lt;br&gt;Date_de_naissance&amp;nbsp; &amp;nbsp; DATE&lt;br&gt;Sexe&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; VARCHAR(5)&lt;br&gt;&lt;/span&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="ZuZZxuCTkOB_Q59-5rjp-18">
+          <mxGeometry y="50" width="270" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-22" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZuZZxuCTkOB_Q59-5rjp-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-23" value="" style="endArrow=none;html=1;rounded=0;exitX=0.994;exitY=0.148;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.181;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="ZuZZxuCTkOB_Q59-5rjp-4" target="ZuZZxuCTkOB_Q59-5rjp-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="410" as="sourcePoint" />
+            <mxPoint x="650" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-27" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.174;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZuZZxuCTkOB_Q59-5rjp-7" target="ZuZZxuCTkOB_Q59-5rjp-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1060" y="430" as="sourcePoint" />
+            <mxPoint x="1110" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-28" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.195;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZuZZxuCTkOB_Q59-5rjp-16" target="ZuZZxuCTkOB_Q59-5rjp-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="440" as="sourcePoint" />
+            <mxPoint x="1320" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-29" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.006;entryY=0.174;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ZuZZxuCTkOB_Q59-5rjp-10" target="ZuZZxuCTkOB_Q59-5rjp-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="440" as="sourcePoint" />
+            <mxPoint x="700" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuZZxuCTkOB_Q59-5rjp-30" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.008;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZuZZxuCTkOB_Q59-5rjp-13" target="ZuZZxuCTkOB_Q59-5rjp-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="590" as="sourcePoint" />
+            <mxPoint x="660" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
