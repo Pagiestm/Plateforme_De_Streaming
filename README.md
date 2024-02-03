@@ -12,6 +12,10 @@
 
 ![MCD](./Documents/MCD.png)
 
+## MLD (Modèle Logique de Données)
+
+![MLD](./Documents/MLD.png)
+
 ## Création de la base de données
 
 [Création de la base de données](./Documents/create_database.md)
