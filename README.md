@@ -10,7 +10,7 @@
 
 ## MCD (Modèle Conceptuel de Données)
 
-Nous partons du principe que dans l'application, il est possible d'ajouter autant d'acteurs, de films et de réalisateurs que l'on veut afin de les répertorier et avoir la possibilité de les liées entre eux afin de récupérer certaines informations.
+Nous partons du principe que dans l'application, il est possible d'ajouter autant d'acteurs, de films d'utilisateurs, et de réalisateurs que l'on veut afin de les répertorier et avoir la possibilité de les liées entre eux afin de récupérer certaines informations.
 Par rapport au contexte, on peut aussi observer que j'ai rajouté le sexe pour les acteurs. En effet, il est important de différencier cette donnée pour des recherches plus précise s'ils l'ont recherché un acteur ou une actrice.
 
 ![MCD](./Documents/MCD.png)
